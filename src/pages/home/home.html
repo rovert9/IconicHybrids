@@ -1,14 +1,19 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color='header'>
     <ion-title>
-      Ionic Blank
+      Exam Locator
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <img src="assets/imgs/ULLogo.png" style="padding-left:80px; padding-right:80px">
+  <h3>Please input your registered course code to locate your exam venue:</h3><br><br>
+  <ion-input placeholder="Enter course code" [(ngModel)]="text" ></ion-input> 
+  <button ion-button block (click)="search()">search</button>
 </ion-content>
+
+
+
+
+<!--////////////////////////// get a notification about the venue once it is uploaded ///////////////////////-->
